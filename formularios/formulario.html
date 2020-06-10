@@ -1,0 +1,126 @@
+
+<!--APRENDER HTML FORMULARIOS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"type="text/css" href="estilos_for.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <section id="superposicion">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" 
+      alt="logotipo de Davie's Burguer" id="logo">
+      <hr>
+
+    </section>
+    <hr>
+    <form action="/ submit.html" method="POST"><!--ESTA ETIQUETA CREA UN FORMULARIO Y LO CONECTA ALA BASE DE DATOS-->
+    <h1>Bienvenido a Davie's Burguer</h1>
+    <p> Estamos emocionados de tenerte aqui.</p>
+    <h1>Inicio de sesion para Davie's Hamburguesas</h1>
+    
+
+    <label for="username" >Nombre usuario:</label> <!--Creando un label explicamos que input se utiliza-->
+   
+    <!-- <input type="text" name="userName" value="David"> ENTRADA DE TEXTO -->
+   <input type="text"name="userName" id="username"> <!--AGREGANDO ETIQUETA-->   
+   <br>
+   <label for="user-pw" >Contraseña:</label><!--CREANDO UN LABEL PARA LA CONTRASEÑA-->
+   <input id="user-pw" type="user-pw" name="user-pw">
+</form>
+<hr><!--SEPARADORES DE ETIQUETA-->
+<form > <h1>¡Cree una hambuerguesa!</h1>
+    <section class="protein">
+        <label for="patty">Que proteinas te gustaria</label>
+        <input type="text"name ="patty" id="patty" value="beef">
+    </section>
+    <hr>
+    <section class="empanadas">
+        <label for="amount">¿Cuantas empanadas quires?</label>
+        <input id="amount" type="number" step="1"name="amount"> <!--ENTRADA DE NUMERO INPUT NUMBER-->
+
+    </section>
+    <hr>
+    <section class="cooked">
+        <label for="doneses"> Como quieres que se concine tu hamburguesa</label>
+        <br>
+    <!--RANGO DE ENTRADA..Para establecer los valores mínimo y máximo del control deslizante,
+     asignamos valores al atributo miny maxdel <input>-->
+        <span>Raro</span>
+      <input  id ="donese" name="donese"type="range" min="0" max="5"step="0.5">
+      <span>Bien hecho</span>
+       
+
+    </section>
+    <hr>
+    <!--ENTRADAS DE CASILLAS DE VERIFICACION.. para darle al usuario multiples opciones-->
+    <section class="coberturas">
+        <span>¿Que ingredientes desea</span>
+        <br>
+        <input id="lechuga" name ="topping" type="checkbox"value="lechuga">
+        <label for="lechuga">Lechuga</label>
+
+        <input id="tomatto" name="topping" type="checkbox" value="tomate">
+        <label for="tomatto">Tomate</label>
+
+        <input id="aji"  name="topping"type="checkbox" value="aji">
+        <label for="aji"> Aji</label>
+</section>
+<hr>
+<!--ENTRADA DE BOTON DE RADIO .. es util para darle al usuario un sola opcion-->
+<section class="cursi">
+    <span>Te gustaria agregar queso</span>
+    <br>
+    <input id="yes "name="chesee" type="radio" value="yes" >
+    <label for="yes">Si</label>
+
+    <input  id="no" name="chesee" type="radio" value="no">
+     <label for="no">No</label>
+</section>
+<hr>
+<!--LISTA DESPLEGABLE -->
+<section class="bun-type" >
+    <label for="bun">Que tipo de bollo te gustaria</label>
+ <select id="bun" name="bun" >
+ <option value="sesamo">Sesamo</option>
+
+ <option value="potato">Papas</option>
+ <option value="pretzel">Pretzel</option>
+</select>
+</section>
+<hr>
+<!--ENTRADA DATALIST..crea un campo de texto que los usuarios pueden filtrar-->
+<section class="sauce-selecctio ">
+    <label for="sauce">Que tipo de salsa quieres</label>
+    <input list="sauces" id="sauce" name="sauce">
+<datalist  id="sauces">
+    <option value="ketchup"></option>
+    <option value="mayo"></option>
+    <option value="mostaza"></option>
+</datalist>
+
+
+</section>
+<hr>
+<!--TEXT AREA..se usa para q crear una campo de texto mas grande que los usuarios escriban mas texto-->
+<section class="informacion-extra">
+    <label for="extra ">Algo mas que quieras agregar</label>
+    <br>
+    <textarea name="extra" id="extra" cols="40" rows="3"> sin utensilios de cocina por favor</textarea>
+      
+</section>
+<hr>
+<section class="submit">
+    <input type="submit" value="Enviar">
+
+</section>
+
+</section>
+</form>
+</body>
+</html>

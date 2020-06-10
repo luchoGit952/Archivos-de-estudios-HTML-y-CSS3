@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ship To It - Company Packing List</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="estilos.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <ul class="navigation">
+    <li><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png" height="20px;"></li>
+    <li class="active">Action List</li>
+    <li>Profiles</li>
+    <li>Settings</li>
+  </ul>
+
+  <div class="search">Search the table</div>
+  
+  <table><!--ETIQUETA PARA CREAR UNA TABLA-->
+    <thead> <!--SE CREA UNA CABEZA DE TABLA-->
+    <tr>
+      <th>Company Name</th><!--ETIQUETAS PARA CREAR ENCABEZADO-->
+      <th>Number of Items to Ship</th>
+      <th>Next Action</th>
+    </tr>
+    </thead> <!--ETIQUETA PARA SECCIONAR ENCABEZADOS DE LAS COLUMNAS-->
+    <tbody><!--SE CREA UN CUERPO DE UNA TABLA-->
+    <tr> <!--ETIQUETAS PARA CREAR FILAS-->
+      <td colspan="2">Adam's Greenworks</td> <!--EL ATRIBUTO COLSPAN SIRVE PARA ABARCAR COLUMNAS-->
+      <td>14</td> <!--ETIQUETA PARA CREAR TABLA DE DATOS-->
+      <td>Package Items</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Davie's Burgers</td><!--EL TARIBUTO ROWSPAN SIRVE PARA ABARCAR FILAS-->
+      <td>2</td>
+      <td>Send Invoice</td>
+    </tr>
+    <tr>
+      <td>Baker's Bike Shop</td>
+      <td>3</td>
+      <td>Send Invoice</td>
+    </tr>
+    <tr>
+      <td>Miss Sally's Southern</td>
+      <td>4</td>
+      <td>Ship</td>
+    </tr>
+    <tr>
+      <td>Summit Resort Rentals</td>
+      <td>4</td>
+      <td>Ship</td>
+    </tr>
+    <tr>
+      <td>Strike Fitness</td>
+      <td>1</td>
+      <td>Enter Order</td>
+    </tr>
+    </tbody> <!--ETIQUETA SIRVE PARA TABLAS LARGAS-->
+    <tfoot> <!--ETIQUETA PARA SECCIONAR ELEMENTOS Y SE CREA UN PIE DE PAGINA DE UNA TABLA-->
+        <td>total</td>
+        <td>28</td>
+    </tfoot>
+  </table>
+
+
+</body>
+</html>
+<!--Tenga en cuenta, también, el uso del scopeatributo, que puede tomar uno de dos valores:
+
+row - este valor deja en claro que el encabezado es para una fila.
+col - este valor deja en claro que el encabezado es para una columna.-->

@@ -1,0 +1,230 @@
+/*FONT-FACE*/
+@font-face {
+    font-family: 'Glegoo';
+    src: url(../fonts/Glegoo-Regular.ttf) format("truetype"); /*FONT-FACE III*/
+    font-style: normal;
+    font-weight: 400;
+    src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+  
+  @font-face {                /*FONT-FACE*/
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(https://fonts.gstatic.com/s/spacemono/v1/vdpMRWfyjfCvDYTz00NEPGaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+html {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #F2F2F2;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 28px;
+    font-family: Georgia;
+    text-transform: uppercase;/*transforma el texto*/
+    text-align: center;/*alinea los textos*/
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2.5;
+    font-family: Georgia;
+    word-spacing: 0.5em;/*Para dar espacio a cada palabra*/
+    letter-spacing: 0.2em;/*Sirve para dar espacio entre cada letra */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    margin: 16px 0;
+    font-family: Helvetica;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  #serif, /* Offset linked sections to account for header. */
+  #sans,
+  #mono {
+    padding-top: 77px;
+    margin-top: -77px;
+  }
+  
+  /* Header */
+  
+  .header {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 900;
+  }
+  
+  .header li {
+    display: inline-block;
+  }
+  
+  .header a {
+    display: block;
+    color: #4A4A4A;
+    padding: 30px 20px;
+  }
+  
+  a.home {
+    color: #4D00FF;
+  }
+  
+  
+  /* Banner Section */
+  
+  .banner {
+    background-color: #4D00FF;
+    padding: 100px 0;
+    margin-top: 77px;
+    text-align: center;
+    font-family: "Glegoo"; /*FONT-FACE III*/
+  }
+  
+  .banner p {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.4;/*Sirve que tan alto quremos sea nuestra linea de texto*/
+  }
+  
+  /* Editorial Sections */
+  
+  .editorial {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #4C4C4C;
+  }
+  
+  /* Font Card Sections */
+  
+  .font-card {
+    background-color: #ffffff;
+    margin: 50px 0;
+    padding: 20px 50px;
+  }
+  
+  .font-card .creator {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+  
+  .sample {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 20px;
+  }
+  
+  .sample h2 {
+    line-height: 1.5;
+  }
+  
+  .sample .text {
+    color: #4D00FF;
+    font-size: 100px;
+  }
+  
+  /* Add styles for the Garamond font here */
+  
+ .garamon.sample.text{
+     font-family:Garamond,serif;
+ }
+  .helvetica.sample.text{
+      font-family: Helvetica,sans-serif;/*Fuentes de reserva*/
+
+  }
+  .space.sample.text{
+      font-family: "Space Mono",monospace;/*Vinculando fuentes*/
+  }
+  /* Add styles for the Space Mono font here */
+  
+  .bold {
+    font-weight: 900;
+  }
+  
+  .regular {
+    font-weight: normal;
+  }
+  
+  .italic {
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 535px) {
+    .header {
+      font-size: 14px;
+    }
+  
+    .header a {
+      padding: 30px 20px;
+    }
+  
+    a.home {
+      display: none;
+    }
+  }
+/*TIPOGRAFIA CSS*/
+/*FONT-weigth..podemos aplicar estilo al texto en negrita con la font-weightpropiedad.*/ 
+
+/*Font Weight II..asignar un valor numérico al estilo del texto en 
+una escala numérica que oscila entre 100 y 900. 
+Los valores válidos son
+ múltiplos de 100 dentro de este rango, como 200o 500.
+ 400es el valor predeterminado font-weightde la mayoría del texto.
+700significa un negrita font-weight.
+300significa una luz font-weight.
+*/
+
+/*FONT-style..También puede poner en cursiva el texto con la font-style propiedad.*/
+
+/*WORD-SPACING..También puede aumentar el espacio entre palabras en un cuerpo de texto, técnicamente conocido como espacio entre palabras .
+Para hacerlo, puede usar la word-spacing propiedad:
+h1  { espaciado de palabras : 0.3em ; }La cantidad predeterminada de espacio entre palabras es generalmente 0.25em.*/
+
+/*LINE-HEIGTH..Podemos usar la line-height propiedad para establecer qué tan 
+alto queremos que sea la línea que contiene nuestro texto*/
+
+/*Serif y Sans Serif.. 1.Serif: fuentes que tienen detalles adicionales en los extremos de cada letra. 
+Los ejemplos incluyen fuentes como Times New Roman o Georgia, entre otros.
+2.Sans-Serif: fuentes que no tienen detalles adicionales en los extremos de cada letra.
+ En cambio, las letras tienen bordes rectos y planos, como Arial o Helvetica.*/
+
+ /*FUENTES DE RESERVA..*/
+
+ /*FONT-FACE I.. Para cargar fuentes con la @font-facepropiedad:
+
+En lugar de usar el enlace de la fuente en el documento HTML, 
+ingrese el enlace en la barra de URL del navegador.
+El navegador cargará las reglas CSS. Deberá centrarse 
+en las reglas que están etiquetadas directamente como /* latin.. 
+Algunas de las reglas latinas están en líneas separadas. Necesitará cada uno de estos.
+Copie cada una de las reglas CSS etiquetadas en latín y pegue las 
+reglas del navegador en la parte superior de style.css .
+Es importante destacar la necesidad de copiar las @font-facereglas 
+en la parte superior de la hoja de estilo para que la fuente se cargue 
+correctamente en el proyecto. */

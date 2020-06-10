@@ -1,0 +1,184 @@
+/*COLOR CSS*/
+body {
+    padding: 0;
+    margin: 0;
+    background: #F7F7F7;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+  }
+/** estlos header **/
+.header {
+    background-image: url(https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+    height: 400px;
+    background-position: center center;
+  }
+  .tostado{
+    margin: 40px auto;
+    padding: 20px 30px 40px 30px;
+    background-color:#FFFFFFFF;
+    overflow: auto;
+    border-radius: 4px;
+    align-self: center;
+  }
+  .tostado p{
+      color:#938E89;
+      text-align :center;
+      line-height: 24px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+  
+  }
+  .espectro div{
+    font: inherit;
+    padding: 0 20px;
+    color: #FFFFFF;
+    overflow: auto;
+    opacity: 0.9;
+  }
+  .espectro p {
+    color: #FFFFFF;
+    text-align: left;
+  }
+  
+  /* tipos de asados */
+  .verde {
+    background-color: #9EB599;/* HEXADECIML*/
+  /* background-color: rgb(143,188,143); COLORES RGB*/
+  color:#9EB599;
+
+  }
+  
+  .light {
+    background-color: #683C2C;
+   /* background-color: rgb(160,82,45);*/
+   color:#683C2C;
+  }
+  
+  .ciudad {
+    background-color:#4C352D; 
+  /* background-color: rgb(139, 69,19);*/
+  
+  }
+  
+  .vienna {
+    background-color:#352926;
+   
+  }
+  
+  .italiano {
+    /*background-color: #000000; HEXADECIMAL*/
+    background-color: #141212;
+  }
+  
+  /* Typography */
+  h1 {
+    color: midnightblue;
+background-color: aqua;/*COLORES CON NOMBRES*/
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: 100px;
+    line-height: 76px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 20%;
+
+  }
+  
+  h2 {
+    color: #E4BB97;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    color: #41292C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: .2em;
+  }
+  
+  h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: .2em;
+    font-weight: 300;
+  }
+  
+  /* elementos de pagina */
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 75%;
+  }
+  
+  li {
+    border-bottom: 1px solid #E4BB97;
+    list-style: none;
+    margin: 100px 0px;
+    padding-bottom: 60px;
+  }
+  
+  p {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  a {
+    color: #214E34;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  
+                          /*COLORES CSS*/
+ /*Los colores en CSS se pueden describir de tres maneras diferentes:
+
+Colores con nombre : palabras en inglés que describen colores, 
+también llamados colores de palabras clave
+RGB : valores numéricos que describen una combinación de rojo, verde y azul.
+HSL : valores numéricos que describen una combinación de matiz, saturación y luminosidad.*/
+
+/*PRIMER PLANO VS FONDO..color - esta propiedad aplica estilo al color de primer plano de un elemento.
+background-color - esta propiedad aplica estilo al color de fondo de un elemento.*/
+
+/*HEXADECIMAL.. Los colores especificados con este sistema se denominan 
+colores hexadecimales . Un color hexadecimal comienza con un 
+carácter hash ( #) seguido de tres o seis caracteres. 
+Los caracteres representan valores para rojo, azul y verde.*/
+
+/*COLORES RGB..Estos colores son exactamente iguales a los hexadecimales, pero con una 
+sintaxis diferente y un sistema numérico diferente. En general, 
+las representaciones de color hexadecimal y decimal son equivalentes.
+ Lo que elijas es una cuestión de gusto personal. Dicho esto, 
+ es bueno elegir uno y ser coherente en todo el CSS,
+ porque es más fácil comparar hexadecimal con hexadecimal y decimal con decimal.*/
+
+
+ /*HEX Y RGB... Tanto en hexadecimal como en decimal, tenemos tres valores,
+  uno para cada color. Cada uno puede ser uno de 256 valores. Específicamente,
+   256 * 256 * 256 = 16,777,216. Esa es la cantidad de
+  colores que ahora podemos representar. ¡Compare eso con los 147 colores CSS nombrados!*/

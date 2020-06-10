@@ -1,0 +1,60 @@
+
+/*CREANDO CUADRICULAS CUADRICULAS ESENCIALES CSS */
+.grid{
+    border: 2px blue solid;
+    /*width: 400px;*/
+    height: 500px;
+   display: grid;/*esto hace una cuadricula*/
+   /* grid-template-columns: 100px 50% 200px;/*ESTO HACE COLUMNAS*/
+   /* grid-template-rows: 40% 50% 50px;/*ESTO CREA UNA FILA*/
+  /* grid-template: 40% 50% 50px /100px 50% 200px;ESTO REEMPLAZA LAS DOS ANTERIORES */
+  /*grid-template: 1fr 1fr 1fr/3fr 50% 1fr;*/ /*ESTO DIVIDE EN FRACCIONES LAS COLUMNAS*/
+ /*grid-template: repeat(3,1fr)/3fr 50% 1fr;*//*REPETICION*/
+ /*grid-template: repeat(3fr,)/3fr minmax(50px,300px,)1fr;*/ /*ESTO SIRVE PARA EVITAR
+ QUE UNA COLUMNA O FILA SEA DEMASIADO GRANDE O DEMASIADO PEQUEÑA*/
+
+ grid-gap: 20px 5px;/* ESTO SIRVE PARA UNA BRECHA EN CADA CUADRICULA*/
+ grid-template: repeat(3,1fr)/3fr 50% 1fr;
+ 
+
+
+}
+.a{
+   /* grid-row-start: 5;ELEMNTOS DE FILA MULTIPLE*/
+   /* grid-row-end: 7;*/
+  /* grid-row: 5/7; REFACTORIZACION DEL CODIGO ANTERIO PRODUCE LA MISMA SALIDA*/
+  grid-area: 5/1 span 2 / span 2;
+}
+.b{
+   /* grid-column: 2/span 6;*/
+   /* grid-row: 2/span3; ESTO CREA COLUMNAS DE CUADRICULA*/
+grid-area: 2 / 2 span 3 / span 6; /*AREA DE CUADRICULA*/
+}
+.c{
+    grid-area: 6/8 span 3 span 1;
+}
+  
+  .box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+  }
+
+/*FRACCION...Al usar la frunidad, podemos definir el tamaño de las columnas y filas como 
+una fracción de la longitud y el ancho de la cuadrícula*/
+
+/*ELEMENTOS DE FILA MULTIPLE...Usando las propiedades CSS grid-row-starty grid-row-end, podemos
+ hacer que los elementos de cuadrícula individual ocupen múltiples filas*/
+
+ /*COLUMNA DE CUADRICUA..Las tres propiedades anteriores también existen para las columnas. 
+ grid-column-start, grid-column-endY grid-columnel trabajo de forma idéntica a las propiedades de fila.
+  Estas propiedades permiten que un elemento de cuadrícula abarque varias columnas. 
+  
+  Al usar estas propiedades, podemos usar la palabra clave spanpara iniciar o finalizar
+   una columna o fila en relación con su otro extremo*/
+
+   /*AREA DE CUADRICULA...Ya hemos podido usar grid-rowy grid-columncomo abreviatura
+    para propiedades como grid-row-starty grid-row-end. Podemos refactorizar aún más usando 
+    la propiedad grid-area. Esta propiedad establecerá
+    las posiciones inicial y final para las filas y columnas de un elemento.*/

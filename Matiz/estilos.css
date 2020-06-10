@@ -1,0 +1,71 @@
+/*MATIZ, SATURACION Y LIGEREZA..La sintaxis para HSL es similar a 
+la forma decimal de RGB, aunque difiere en formas importantes. El primer
+ número representa el grado del tono y puede estar entre 0 y 360. El segundo 
+ y tercer número son porcentajes 
+que representan la saturación y la luminosidad, respectivamente.*/
+
+
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  max-width: 75vw;
+}
+
+.midground, .foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 15vh 0 0 15vw;
+  padding: 0;
+  width: 35vw;
+  height: 59vh;
+}
+
+body {
+ /* background-color: hsl(240, 100%, 80%);*/
+ background-color: rgba(0,255,0,0.5);
+}
+
+.midground {
+ /* background-color: hsl(225, 100%, 50%);*//*MATIZ, SATURACION Y LIGEREZA*/
+background-color: hsla(225, 100%, 25%, 0.4);
+}
+
+.foreground {
+ /* background-color: hsl(325, 25%, 50%); MATIZ,SATURACION Y LIGEREZA*/
+ background-color: hsla(325,50%,50%,0.6 );
+}
+
+/*OPACIDAD Y ALFA..Para usar la opacidad en el esquema de color HSL, 
+use en hslalugar de hsly cuatro valores en lugar de tres. Por ejemplo:
+color : hsla ( 34 , 100% , 50% , 0.1 ) ;  */
+
+/*REVISION DE COLOR...Hay cuatro formas de representar el color en CSS:
+
+Colores con nombre: hay 147 colores con nombre, que puede revisar aquí .
+
+Colores hexadecimales o hexadecimales
+
+Hexadecimal es un sistema numérico con dieciséis dígitos, de 0 a 9 seguido de "A" a "F".
+Los valores hexadecimales siempre comienzan con #y especifican valores de rojo, azul y verde utilizando números hexademicos como #23F41A.
+RGB
+
+Los colores RGB usan la rgb()sintaxis con un valor para el rojo, un valor para el azul y un valor para el verde.
+Valores RGB van de 0 a 255 y el siguiente aspecto: rgb(7, 210, 50).
+HSL
+
+HSL significa matiz (el color en sí mismo),
+ saturación (la intensidad del color) 
+y luminosidad (cuán claro u oscuro es un color).
+Rangos Hue de 0 a 360 y saturación y luminosidad están ambos representados como 
+porcentajes como esta: hsl(200, 20%, 50%).
+Puede agregar opacidad al color en RGB y HSL agregando un cuarto valor a, que se representa como un porcentaje.*/
